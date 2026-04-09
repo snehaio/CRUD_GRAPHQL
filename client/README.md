@@ -1,16 +1,164 @@
-# React + Vite
+# User Manager – GraphQL CRUD Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **full-stack CRUD application** built using **React, GraphQL, and Apollo**.
+The application allows users to **create, read, update, and delete users** with basic details like name, age, and marital status.
 
-Currently, two official plugins are available:
+It demonstrates how **React interacts with a GraphQL API** using **Apollo Client**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* ➕ Create a new user
+* 📋 View all users
+* 🔍 Search users by name
+* 🆔 Fetch a user by ID
+* ✏️ Update user marital status
+* ❌ Delete users
+* 🎨 Clean card-based UI
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+### Frontend
+
+* React
+* Apollo Client
+* JavaScript
+* CSS
+
+### Backend
+
+* Node.js
+* Apollo Server
+* GraphQL
+
+---
+
+## 📂 Project Structure
+
+```
+project-root
+│
+├── server.js          # GraphQL server
+├── src
+│   ├── App.jsx        # Main React component
+│   ├── App.css
+│   └── main.jsx
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone <your-repo-link>
+cd project-folder
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 3️⃣ Start GraphQL Server
+
+```bash
+node server.js
+```
+
+Server runs at:
+
+```
+http://localhost:4000
+```
+
+---
+
+### 4️⃣ Start React Frontend
+
+```bash
+npm run dev
+```
+
+Frontend runs at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🔗 GraphQL Operations
+
+### Queries
+
+```
+getUsers
+getUserById(id)
+```
+
+### Mutations
+
+```
+createUser(name, age, isMarried)
+updateUser(id, isMarried)
+deleteUser(id)
+```
+
+---
+
+## 🧠 How It Works
+
+1. React frontend sends **GraphQL queries and mutations** using **Apollo Client**.
+2. Apollo Server processes the request.
+3. Resolver functions modify or fetch user data.
+4. Updated data is returned and displayed instantly in the UI.
+
+---
+
+## 📌 Example User Object
+
+```
+{
+  id: "1",
+  name: "John Doe",
+  age: 30,
+  isMarried: true
+}
+```
+
+---
+
+## 🎯 Learning Objectives
+
+This project demonstrates:
+
+* GraphQL schema and resolvers
+* Apollo Client integration
+* Full-stack React + GraphQL workflow
+* CRUD operations using GraphQL
+
+---
+
+## 🔮 Future Improvements
+
+* Add database (MongoDB / PostgreSQL)
+* User authentication
+* Better UI components
+* Edit user form
+* Pagination and filtering
+
+---
+<img width="1012" height="874" alt="{BA8014FB-2F6F-4D15-8DAC-502A7E5C301F}" src="https://github.com/user-attachments/assets/d9197c28-6556-44d4-8f41-772268ee63af" />
+
+
+
